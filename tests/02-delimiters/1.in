@@ -1,0 +1,2 @@
+DELIMITER ;
+PARSE Alice;30;NYC

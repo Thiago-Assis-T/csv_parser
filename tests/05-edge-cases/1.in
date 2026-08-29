@@ -1,0 +1,4 @@
+STRICT
+PARSE Alice,"unclosed
+LENIENT
+PARSE Alice,"unclosed

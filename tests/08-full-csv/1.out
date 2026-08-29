@@ -1,0 +1,13 @@
+name | role | dept
+Alice | Engineer | R&D
+Bob | Manager | Sales
+Carol | Engineer | Sales
+Bob | Manager | Sales
+Carol | Engineer | Sales
+Alice | Engineer
+Bob | Manager
+Carol | Engineer
+name,role,dept
+Alice,Engineer,R&D
+Bob,Manager,Sales
+Carol,Engineer,Sales

@@ -1,0 +1,11 @@
+LOAD
+name,role,dept
+Alice,Engineer,R&D
+Bob,Manager,Sales
+Carol,Engineer,Sales
+END
+HEADERS
+ROWS
+FILTER dept Sales
+PROJECT name role
+EXPORT

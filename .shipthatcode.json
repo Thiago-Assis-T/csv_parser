@@ -1,0 +1,42 @@
+{
+  "course": "build-csv-parser",
+  "language": "c",
+  "language_id": 50,
+  "entrypoint": "main.c",
+  "version": 1,
+  "content_hash": "4b112f84eaca29e0",
+  "lessons": [
+    {
+      "slug": "csv-basics",
+      "tests_hash": "12e69468c6a7"
+    },
+    {
+      "slug": "delimiters",
+      "tests_hash": "6f5a03b22c15"
+    },
+    {
+      "slug": "quotes",
+      "tests_hash": "53f830b16fc3"
+    },
+    {
+      "slug": "multiline",
+      "tests_hash": "184c9039ca6d"
+    },
+    {
+      "slug": "edge-cases",
+      "tests_hash": "28e7eeebfaf8"
+    },
+    {
+      "slug": "writing",
+      "tests_hash": "9e6f4f38552e"
+    },
+    {
+      "slug": "streaming",
+      "tests_hash": "37a15e63b429"
+    },
+    {
+      "slug": "full-csv",
+      "tests_hash": "30aee5688bab"
+    }
+  ]
+}
