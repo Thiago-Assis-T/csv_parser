@@ -2,13 +2,25 @@
 #include <stdlib.h>
 #include <string.h>
 
-/* TODO (csv-basics): implement per the lesson description. */
-
 int main(void) {
-    char line[1024];
-    while (fgets(line, sizeof line, stdin)) {
-        if (line[0] == '\n' || line[0] == 0) continue;
-        printf("TODO\n");
+  char line[1024];
+  while (fgets(line, sizeof line, stdin)) {
+    line[strcspn(line, "\n")] = '\0'; // Removing trailing new line characters
+
+    char out[sizeof(line) * 3]; // Creating an output buffer
+    char *ptrOut = out;         // Pointer to output buffer
+
+    for (const char *ptrS = line; *ptrS; ++ptrS) {
+      if (*ptrS == ',') {
+        *ptrOut++ = ' ';
+        *ptrOut++ = '|';
+        *ptrOut++ = ' ';
+      } else {
+        *ptrOut++ = *ptrS;
+      }
     }
-    return 0;
+    *ptrOut = '\0';
+    printf("%s\n", out);
+  }
+  return EXIT_SUCCESS;
 }
